@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/run.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/hitPix.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/run.js"></script>
+
+
+</head>
+<body style="background: #000">
+<audio src="audio/runA.wav" loop="loop"></audio>
+<audio src="audio/1.wav"></audio>
+<audio src="audio/jumpA.ogg"></audio>
+
+
+
+<div class="mask">
+    <span class="wenzi">生命值:</span>
+    <div class="life">
+               <div class="pres"></div>
+          </div>
+          <br>
+
+    <span  class="wenzi1"> 成&nbsp;&nbsp;&nbsp;绩:</span>
+    <span class="jifen">0</span>
+</div>
+<canvas ></canvas>
+
+<div class="start text-center">
+   <div class="welcome">超  越</div>
+   <input type="button" class="btn btn-success" value="开始游戏">
+</div>
+<div class="over text-center">
+    <div class="game">Game Over!</div>
+    当前分数:<span class="scoreEle">0</span>
+    历史记录:
+    <ul>
+
+    </ul>
+    <button type="button" class="btn btn-success again">再来一次</button>
+</div>
+
+<img src="img/run1.png" alt="" class="run" hidden>
+<img src="img/run2.png" alt="" class="run" hidden>
+<img src="img/run3.png" alt="" class="run" hidden>
+<img src="img/run4.png" alt="" class="run" hidden>
+<img src="img/run5.png" alt="" class="run" hidden>
+
+<img src="img/jump.png" alt="" class="jump" hidden>
+
+<img src="img/hinder/run1.png" alt="" class="hinder" hidden>
+<img src="img/hinder/run2.png" alt="" class="hinder" hidden>
+<img src="img/hinder/run3.png" alt="" class="hinder" hidden>
+<img src="img/hinder/run4.png" alt="" class="hinder" hidden>
+<img src="img/hinder/run5.png" alt="" class="hinder" hidden>
+<img src="img/hinder/run2.png" alt="" class="hinder" hidden>
+<img src="img/hinder/jump.png" alt="" class="hinder" hidden>
+</body>
+</html>

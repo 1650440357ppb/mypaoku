@@ -1,0 +1,146 @@
+html,body{
+    width:100%;height:100%;
+    margin:0;padding:0;
+    overflow: hidden;
+    background: #000;
+}
+canvas{
+    background:url("../img/runback0.png") repeat-x ;
+}
+.mask{
+    width:100%;height:100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 2;
+    animation:mask 2s ease;
+    font-size: 20px;
+}
+.start{
+    width:30%;height:40%;
+    border:1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    background: rgba(124, 239, 225, 0.65);
+    position: fixed;
+    left:0;top:0;right:0;bottom:0;
+    margin:auto;
+    z-index: 999;
+    font-size: 30px;color:#fff;
+    animation:start 2s ease forwards;
+}
+.welcome{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@keyframes start {
+    0%{
+        transform: translate(0,-1000px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+
+}
+@keyframes mask {
+    0%{
+        background: rgba(0,0,0,0.6);
+    }
+    100%{
+        background: rgba(0,0,0,0.3);
+    }
+
+}
+@keyframes start {
+    0%{
+        transform: translate(0,-1000px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes start1 {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0,-1000px);
+    }
+
+}
+@keyframes mask1 {
+    0%{
+        background: rgba(0,0,0,0.3);
+    }
+    100%{
+        background: rgba(0,0,0,0);
+    }
+
+}
+
+.jifen{
+    width: 140px;
+    height: 30px;
+    position: fixed;
+    left: 82px;
+    top: 76px;
+    /* border: 1px solid red; */
+    line-height: 39px;
+    color:red;
+}
+.life{
+    width: 140px;
+    height: 30px;
+    position: fixed;
+    left: 85px;
+    top: 27px;
+    border: 1px solid #f71c05;
+}
+.pres{
+    height:100%;
+    background:#31ff00;
+    /*float:right;*/
+}
+.over{
+    width:26%;height:45%;
+    /*border:3px solid #333;*/
+    border:1px solid #fff;
+    border-radius: 15px;
+    /*box-shadow: 0px 0px 8px rgba(255,255,255,0.5);*/
+    box-shadow: 0 0 10px;
+    position: fixed;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+    z-index:1000;
+    color:#fff;
+    background:  rgba(124, 239, 225, 0.65);
+    animation: start1 1s ease forwards;
+}
+.again{
+    margin-top:10px;
+    width: 110px;
+}
+.game{
+    line-height: 80px;
+    color:#e41818;font-size: 30px;
+}
+
+.guanka{
+    width:140px;height:40px;
+    position: fixed;
+    right:20px;top:20px;
+    border:1px solid red;
+}
+
+.mask .wenzi{
+    line-height:80px;
+    margin-left: 10px;
+}
+.mask .wenzi1{
+    line-height:20px;
+    margin-left: 10px;
+}
+.over ul li{
+    width: 78px;
+    margin: 0 auto;
+}
